@@ -4,7 +4,8 @@ Runs a prime finding algorithm on 5 different languages to determine their perfo
 
 ## Installation
 
-1. Download and install [Docker](https://docs.docker.com/get-docker/).
+1. Run `$ git clone https://github.com/asplunds/benchmarker.git`
+2. Download and install [Docker](https://docs.docker.com/get-docker/)
 
 ## Usage
 
