@@ -16,3 +16,8 @@ services:
         build: ./csharp
         volumes:
             - ./output:/output
+
+    javascript:
+            build: ./javascript
+            volumes:
+                - ./output:/output
