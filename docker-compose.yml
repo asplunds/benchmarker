@@ -1,0 +1,18 @@
+services:
+    java:
+        build: ./java
+        volumes:
+            - ./output:/output
+    go:
+        build: ./go
+        volumes:
+            - ./output:/output
+    ruby:
+        build: ./ruby
+        volumes:
+            - ./output:/output
+            - ./ruby:/app
+    csharp:
+        build: ./csharp
+        volumes:
+            - ./output:/output
