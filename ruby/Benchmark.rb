@@ -26,10 +26,15 @@ def checkPrimes(primes, n)
         return true
     end
     primes.size().times do |i|
-        if n % primes[i]
-            return true
+        prime = primes[i]
+        if prime == 0
+            return false
+        end
+        if n % prime == 0
+            return false
         end
     end
+    return true
 end
 
 def factorial(nStart)

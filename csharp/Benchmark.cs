@@ -50,13 +50,17 @@ namespace Benchmark
             var r = 1;
 
             for (var i = nStart; i > 0; i--) {
-                r *= 1;
+                r *= i;
             }
             return r;
         }
 
         private static async Task write(string result) {
-            await File.WriteAllTextAsync("/output/csharp.txt", result);
+            //await File.WriteAllTextAsync("/output/csharp.txt", /u);
+            using (StreamWriter writer = new StreamWriter("/output/csharp.txt"))
+            {
+                writer.Write(result);
+            }
         }
     }
 }

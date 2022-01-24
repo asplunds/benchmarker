@@ -21,3 +21,9 @@ services:
             build: ./javascript
             volumes:
                 - ./output:/output
+
+    python:
+        build: ./python
+        volumes:
+            - ./output:/output
+            - ./python:/app
